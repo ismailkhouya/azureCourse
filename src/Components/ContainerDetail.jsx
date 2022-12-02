@@ -9,7 +9,7 @@ export default function ContainerDetail(props) {
   const [loading,setLoading]=useState(false)
 
   const getListBlobs = useCallback(async () => {
-    var Files=await fetch("/GetAllBlobs?containerName="+params.containerName);
+    var Files=await fetch("https://ismailkhouyaazureapi.azurewebsites.net/api/GetAllBlobs?containerName="+params.containerName);
     var LFiles=await Files.json();
     console.log("FILES"+LFiles)
     setListFiles(LFiles);  

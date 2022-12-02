@@ -35,7 +35,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://ismailkhouyaazureapi.azurewebsites.net/api",
   "devDependencies": {
     "react-router-dom": "^6.4.3"
   }

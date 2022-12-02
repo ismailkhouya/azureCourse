@@ -9,7 +9,7 @@ export default function Containers() {
 
     const getListContainers=async()=>{
         setLoading(true);
-        var containers=await fetch("/GetAllContainers");
+        var containers=await fetch("https://ismailkhouyaazureapi.azurewebsites.net/api/GetAllContainers");
         var Lcontainers=await containers.json();
         setContainers(Lcontainers);
         console.log(Lcontainers);
